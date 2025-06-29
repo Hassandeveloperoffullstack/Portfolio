@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Lottie Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li style="--i: 1"><a href="#home" class="active">Home</a></li>
+            <li style="--i: 2"><a href="#about">About</a></li>
+            <li style="--i: 3"><a href="#resume">Resume</a></li>
+            <li style="--i: 4"><a href="#services">Services</a></li>
+            <li style="--i: 5"><a href="#skills">Skills</a></li>
+            <li style="--i: 6"><a href="#projects">Projects</a></li>
+            <li style="--i: 7"><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+            <i class="fas fa-sun light-icon"></i>
+            <i class="fas fa-moon dark-icon"></i>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">WELCOME TO MY WORLD</h3>
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">I'm <span class="typed-text"></span></h1>
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Based in Faisalabad, Pakistan</h2>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <a href="#contact" class="btn primary-btn">Hire Me</a>
+                <a href="#projects" class="btn secondary-btn">View Portfolio</a>
+            </div>
+            <div class="social-links" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+                <div class="about-text">
+                    <p>I'm a full-stack Laravel developer with 2 years of experience in creating dynamic web applications. I excel in both front-end and back-end development, delivering user-friendly and functional solutions. I'm passionate about coding and eager to keep learning.</p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="label">Name</span>
+                            <span class="value">M. Hassan Idrees</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Email</span>
+                            <span class="value">hassan.developer7865@g
+                                mail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Phone</span>
+                            <span class="value">+92-3271166785</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Location</span>
+                            <span class="value">Auyb colony Jhang road, Faisalabad</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn primary-btn" download>Download CV <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+
+            <div class="skills-container">
+                <!-- Frontend Skills -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">HTML5</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="--percent: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">CSS3/SCSS</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="--percent: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="--percent: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Bootstrap</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="--percent: 92%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">PHP/Laravel</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="--percent: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">MySQL</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="--percent: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">RESTful APIs</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="--percent: 82%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Node.js</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="--percent: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Git/GitHub</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="--percent: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Docker</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="--percent: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">VS Code</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="--percent: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Postman</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="--percent: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Skills -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Professional Skills</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Problem Solving</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="--percent: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Team Collaboration</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="--percent: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Communication</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="--percent: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Time Management</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="--percent: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Working Experience</h2>
+            <div class="timeline" data-aos="fade-up" data-aos-delay="100">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Full Stack Web Developer</h3>
+                            <span class="company">Compiling Logics-Faisalabad</span>
+                            <span class="duration">September 2024 -- April 2025</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>At Compiling Logics, I developed full stack Laravel applications, managed MySQL databases, integrated APIs, and deployed to live servers—enhancing my ability to deliver efficient, user-focused solutions.</p>
+                            <ul class="experience-highlights">
+                                <li>Developed and maintained full-stack web applications using Laravel</li>
+                                <li>Managed MySQL databases and optimized queries for better performance</li>
+                                <li>Integrated third-party APIs and services</li>
+                                <li>Deployed and maintained applications on live servers</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-image">
+                        <img src="https://raw.githubusercontent.com/ShahriarShafin/ShahriarShafin/main/Assets/programmer.gif" alt="Programming Animation">
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Developer</h3>
+                            <span class="company">Birdview Logic Business Hub-Faisalabad</span>
+                            <span class="duration">December 2023 -- October 2024</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>As a Software Developer at Birdview Logic Business Hub, I developed custom LMS features using Laravel, Blade, and MySQL, implemented user roles with Spatie, and integrated APIs to deliver scalable edtech solutions.</p>
+                            <ul class="experience-highlights">
+                                <li>Developed custom LMS features using Laravel framework</li>
+                                <li>Implemented user roles and permissions using Spatie</li>
+                                <li>Created and integrated RESTful APIs</li>
+                                <li>Worked with MySQL for database management</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-image">
+                        <img src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" alt="Coding Animation">
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Junior Laravel Developer</h3>
+                            <span class="company">Tech Solutions-Faisalabad</span>
+                            <span class="duration">June 2023 -- December 2023</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>As a Junior Laravel Developer at Tech Solutions, I assisted in building and maintaining Laravel-based web applications, optimized database queries, integrated APIs, and collaborated on frontend/backend features while strengthening my skills in MVC, Git, and team development.</p>
+                            <ul class="experience-highlights">
+                                <li>Built and maintained Laravel-based web applications</li>
+                                <li>Optimized database queries for better performance</li>
+                                <li>Collaborated with team members using Git</li>
+                                <li>Worked on both frontend and backend features</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-image">
+                        <img src="https://cdn.dribbble.com/users/1059583/screenshots/4171367/coding-freak.gif" alt="Developer Animation">
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Education</h3>
+                            <span class="company">TIPS Group of Colleges, Faisalabad</span>
+                            <span class="duration">August 2024 to Present</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Pursuing Intermediate (ICS-STAT) with a focus on computer science and statistics.</p>
+                            <ul class="experience-highlights">
+                                <li>Studying computer science fundamentals</li>
+                                <li>Learning statistical analysis and data interpretation</li>
+                                <li>Developing problem-solving skills</li>
+                                <li>Maintaining academic excellence while working</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-image">
+                        <img src="https://cdn.dribbble.com/users/730703/screenshots/6581243/avento.gif" alt="Education Animation">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-code"></i>
+                    <h3>Full Stack Development</h3>
+                    <p>Building complete web applications using Laravel, PHP, and modern frontend technologies with a focus on scalability and performance.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-database"></i>
+                    <h3>Database Solutions</h3>
+                    <p>Designing and implementing efficient database structures, migrations, and optimizing queries for better performance.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-plug"></i>
+                    <h3>API Development</h3>
+                    <p>Creating robust RESTful APIs with proper authentication, documentation, and integration capabilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=600&auto=format&fit=crop&q=80" alt="E-commerce Website">
+                    <h3>E-commerce Website</h3>
+                    <p>A full-featured online store with modern UI and seamless checkout process.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn primary-btn">View Live</a>
+                        <a href="#" class="btn secondary-btn">Source Code</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?w=600&auto=format&fit=crop&q=80" alt="Portfolio Website">
+                    <h3>Portfolio Template</h3>
+                    <p>A modern and responsive portfolio website template for creative professionals.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn primary-btn">View Live</a>
+                        <a href="#" class="btn secondary-btn">Source Code</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=600&auto=format&fit=crop&q=80" alt="Task Management App">
+                    <h3>Task Manager</h3>
+                    <p>A feature-rich task management application with real-time updates.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn primary-btn">View Live</a>
+                        <a href="#" class="btn secondary-btn">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Client Testimonials</h2>
+            <div class="testimonials-wrapper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper testimonials-slider">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="quote-icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <p>"Hassan is an exceptional developer who delivered our e-commerce platform ahead of schedule. His attention to detail and problem-solving skills are remarkable. We're already planning our next project with him!"</p>
+                                    <div class="client-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="client-info">
+                                    <div class="client-image">
+                                        <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="John Smith">
+                                    </div>
+                                    <div class="client-details">
+                                        <h4>John Smith</h4>
+                                        <span>CEO, TechStart Solutions</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="quote-icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <p>"Working with Hassan was a pleasure. He transformed our outdated website into a modern, user-friendly platform. His expertise in Laravel and frontend technologies made the process smooth and efficient."</p>
+                                    <div class="client-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="client-info">
+                                    <div class="client-image">
+                                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson">
+                                    </div>
+                                    <div class="client-details">
+                                        <h4>Sarah Johnson</h4>
+                                        <span>Marketing Director, Creative Hub</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="quote-icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <p>"Hassan's technical expertise and communication skills are outstanding. He not only delivered a robust API system but also provided excellent documentation. His work has significantly improved our app's performance."</p>
+                                    <div class="client-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="client-info">
+                                    <div class="client-image">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                                    </div>
+                                    <div class="client-details">
+                                        <h4>Michael Chen</h4>
+                                        <span>CTO, InnovateTech</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="quote-icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <p>"Hassan's ability to understand complex business requirements and translate them into elegant code is impressive. He built our inventory management system with exceptional attention to security and performance."</p>
+                                    <div class="client-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="client-info">
+                                    <div class="client-image">
+                                        <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Emily Rodriguez">
+                                    </div>
+                                    <div class="client-details">
+                                        <h4>Emily Rodriguez</h4>
+                                        <span>Operations Manager, LogiTech Solutions</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 5 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="quote-icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <p>"Working with Hassan on our healthcare platform was a great experience. His knowledge of Laravel and database optimization helped us handle large amounts of sensitive data securely and efficiently."</p>
+                                    <div class="client-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="client-info">
+                                    <div class="client-image">
+                                        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Dr. James Wilson">
+                                    </div>
+                                    <div class="client-details">
+                                        <h4>Dr. James Wilson</h4>
+                                        <span>Director, HealthTech Innovations</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 6 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="quote-icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <p>"Hassan demonstrated exceptional skill in developing our real-time analytics dashboard. His expertise in frontend optimization and API integration resulted in a lightning-fast application that our clients love."</p>
+                                    <div class="client-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="client-info">
+                                    <div class="client-image">
+                                        <img src="https://randomuser.me/api/portraits/women/62.jpg" alt="Lisa Chang">
+                                    </div>
+                                    <div class="client-details">
+                                        <h4>Lisa Chang</h4>
+                                        <span>Product Manager, DataViz Pro</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Auyb colony Jhang road, Faisalabad</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+92-3271166785</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>hassan.developer7865@gmail.com</p>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Me</h3>
+                    <p>I'm a full-stack Laravel developer with 2 years of experience, passionate about creating efficient and scalable web solutions. Let's collaborate to bring your ideas to life!</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Auyb colony Jhang road, Faisalabad</li>
+                        <li><i class="fas fa-phone"></i> +92-3271166785</li>
+                        <li><i class="fas fa-envelope"></i> hassan.developer7865@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 M. Hassan Idrees Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html> 
